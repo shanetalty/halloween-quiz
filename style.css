@@ -9,16 +9,17 @@
 
 body {
   height: 100vh;
+  margin: 0;
+  overflow: hidden;
 }
 
-#background-video {
+#background-image {
   position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
   z-index: -1;
 }
 
@@ -37,30 +38,6 @@ body {
 
 .fade-in {
   opacity: 1;
-}
-
-@-webkit-keyframes AnimationName {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@-moz-keyframes AnimationName {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }
 
 @keyframes AnimationName {
@@ -93,24 +70,38 @@ button {
   cursor: pointer;
 }
 
+#start-button,
+#next-button,
+#restart,
+.time-left {
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+#start-button:hover,
+#next-button:hover,
+#restart:hover {
+  background-color: #a271e2;
+  color: #31f7ab;
+}
+
 #start-button {
   font-size: 1.3em;
   padding: 0.5em 1.8em;
-  border-radius: 2em; /* Updated border-radius value */
-  background-color: #1E1E1E; /* Set the background color to black */
-  color: #EB1E25; /* Set the text color to red */
-  margin-top: 15em; /* Adjust the value as needed */
+  border-radius: 2em;
+  background-color: #3b1365;
+  color: #04de90;
+  margin-top: 15em;
   font-weight: bold;
 }
-
 
 #restart {
   margin-top: 0.9em;
 }
 
 #display-container {
-  background-color: #1E1E1E;
-  color: #ffffff;
+  background-color: #23123a;
+  color: #04de90;
   padding: 3.1em 1.8em;
   width: 80%;
   max-width: 37.5em;
@@ -120,6 +111,7 @@ button {
   top: 50%;
   left: 50%;
   border-radius: 0.6em;
+  border: 2px solid #04de90; /* Add border with color #04de90 */
 }
 
 .header {
@@ -132,7 +124,7 @@ button {
 }
 
 .timer-div {
-  background-color: #EB1E25;
+  background-color: #3b1365;
   width: 7.5em;
   border-radius: 1.8em;
   display: flex;
@@ -148,6 +140,8 @@ button {
 
 .option-div {
   font-size: 0.9em;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
   width: 100%;
   padding: 1em;
   margin: 0.3em 0;
@@ -160,14 +154,12 @@ button {
 }
 
 .score-container {
-  background-color: #000000;
-  color: #ff0000;
+  background-color: #23123a;
+  color: #04de90;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
 }
-
-
 
 .option-div:disabled {
   color: #1E1E1E;
@@ -177,8 +169,8 @@ button {
 #next-button {
   font-size: 1em;
   margin-top: 1.5em;
-  background-color: #EB1E25;
-  color: #1E1E1E;
+  background-color: #3b1365;
+  color: #04de90;
   padding: 0.7em 1.8em;
   border-radius: 0.3em;
   float: right;
@@ -191,8 +183,8 @@ button {
   border-radius: 0.2em;
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.4);
   margin-top: 0.9em;
-  background-color: #1E1E1E;
-  color: #EB1E25;
+  background-color: #3b1365;
+  color: #04de90;
   border: none;
   outline: none;
   cursor: pointer;
@@ -219,4 +211,3 @@ button {
   font-size: 1.5em;
   color: #ffffff;
 }
-
