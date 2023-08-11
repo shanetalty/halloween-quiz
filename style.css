@@ -12,8 +12,8 @@ body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
-  opacity: 0; /* Initial opacity set to 0 */
-  transition: opacity 1s ease-in-out; /* Transition for fade-in effect */
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
 #background-image {
