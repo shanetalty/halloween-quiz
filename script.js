@@ -16,7 +16,7 @@ let countdown;
 let logoContainer = document.querySelector(".logo-container");
 
 window.addEventListener("load", () => {
-  document.body.style.opacity = 1; // Set initial opacity to 1
+  document.body.style.opacity = 1;
   startScreen.classList.remove("hide");
   displayContainer.classList.add("hide");
 });
@@ -201,19 +201,17 @@ function quizCreator() {
   }
 }
 
-// Function to check if option is correct or not
 function checker(userOption, correctOption) {
   let userSolution = userOption.innerText;
   let question = document.getElementsByClassName("container-mid")[questionCount];
   let options = question.querySelectorAll(".option-div");
 
-  // If user clicked answer == correct option stored in object
   if (userSolution === correctOption) {
     userOption.classList.add("correct");
     scoreCount++;
   } else {
     userOption.classList.add("incorrect");
-    // For marking the correct option
+    
     options.forEach((element) => {
       if (element.innerText == correctOption) {
         element.classList.add("correct");
@@ -229,7 +227,6 @@ function checker(userOption, correctOption) {
   });
 }
 
-// Initial setup
 function initial() {
   quizContainer.innerHTML = "";
   questionCount = 0;
