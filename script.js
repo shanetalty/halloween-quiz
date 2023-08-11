@@ -15,11 +15,10 @@ let count = 11;
 let countdown;
 let logoContainer = document.querySelector(".logo-container");
 
-// Hide quiz and display start screen
 window.addEventListener("load", () => {
+  document.body.style.opacity = 1; // Set initial opacity to 1
   startScreen.classList.remove("hide");
   displayContainer.classList.add("hide");
-  document.body.classList.add("fade-in"); // Add fade-in class to body
 });
 
 
@@ -84,6 +83,48 @@ const quizArray = [
     question: "What is the largest organ in the human body?",
     options: ["Skin", "Liver", "Brain", "Lungs"],
     correct: "Skin",
+  },
+  {
+    id: "10",
+    question: "In which country did the tradition of Halloween originate?",
+    options: ["United States", "Ireland", "Germany", "Mexico"],
+    correct: "Ireland",
+  },
+  {
+    id: "11",
+    question: "What is the fear of Halloween called?",
+    options: ["Pumpkinphobia", "Halloweenscardia", "Samhainophobia", "Spookophobia"],
+    correct: "Samhainophobia",
+  },
+  {
+    id: "12",
+    question: "What is the name of the Celtic festival that Halloween is believed to have originated from?",
+    options: ["All Hallows Day", "Harvest Festival", "Samhain", "Walpurgisnacht"],
+    correct: "Samhain",
+  },
+  {
+    id: "13",
+    question: "Which mythical creature is said to transform from human to bat and back during Halloween?",
+    options: ["Werewolf", "Vampire", "Zombie", "Ghost"],
+    correct: "Vampire",
+  },
+  {
+    id: "14",
+    question: "What do people commonly bob for on Halloween?",
+    options: ["Apples", "Pumpkins", "Oranges", "Potatoes"],
+    correct: "Apples",
+  },
+  {
+    id: "15",
+    question: "Which famous magician died on Halloween in 1926 and is known for his escape acts?",
+    options: ["Harry Potter", "David Copperfield", "Harry Houdini", "David Blaine"],
+    correct: "Harry Houdini",
+  },
+  {
+    id: "16",
+    question: "In Mexican culture, what holiday honors deceased loved ones and is celebrated from October 31st to November 2nd?",
+    options: ["Dia de Los Santos", "Fiesta de las Almas", "La Noche de Mil Mascaras", "Dia de los Muertos"],
+    correct: "Dia de los Muertos",
   },
   // Rest of the questions...
 ];
@@ -160,7 +201,7 @@ function quizCreator() {
   }
 }
 
-// Checker Function to check if option is correct or not
+// Function to check if option is correct or not
 function checker(userOption, correctOption) {
   let userSolution = userOption.innerText;
   let question = document.getElementsByClassName("container-mid")[questionCount];
@@ -215,7 +256,7 @@ function displayNext() {
     // Hide question container and display score
     displayContainer.classList.add("hide");
     scoreContainer.classList.remove("hide");
-    // User score
+    // Score
     userScore.innerHTML = `Your score is ${scoreCount} out of ${questionCount}`;
   } else {
     // Display questionCount
