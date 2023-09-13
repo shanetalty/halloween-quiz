@@ -126,12 +126,6 @@ const quizArray = [
     options: ["Dia de Los Santos", "Fiesta de las Almas", "La Noche de Mil Mascaras", "Dia de los Muertos"],
     correct: "Dia de los Muertos",
   },
-  {
-    id: "16",
-    question: "Test question",
-    options: ["Test1", "Test2", "Test3", "Test4"],
-    correct: "Test1",
-  },
   // Rest of the questions...
 ];
 
