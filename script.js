@@ -130,7 +130,7 @@ const quizArray = [
     id: "16",
     question: "Test question",
     options: ["Test1", "Test2", "Test3", "Test4"],
-    correct: "Dia de los Muertos",
+    correct: "Test1",
   },
   // Rest of the questions...
 ];
