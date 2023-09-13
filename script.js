@@ -126,6 +126,25 @@ const quizArray = [
     options: ["Dia de Los Santos", "Fiesta de las Almas", "La Noche de Mil Mascaras", "Dia de los Muertos"],
     correct: "Dia de los Muertos",
   },
+  {
+    id: "17",
+    question: "What were the original Jack o' Lanterns made of?",
+    options: ["Pumpkins", "Turnips", "Apples", "Watermelons"],
+    correct: "Turnips",
+  },
+  {
+    id: "18",
+    question: "Transylvania is a region in what country?",
+    options: ["Romania", "Latvia", "Lithuania", "Turkey"],
+    correct: "Romania",
+  },
+  {
+    id: "19",
+    question: "Which one of these monsters are known for their fear of garlic and wooden stakes?",
+    options: ["Vampires", "Zombies", "Ghosts", "Skeletons"],
+    correct: "Vampires",
+  },
+  
   // Rest of the questions...
 ];
 
