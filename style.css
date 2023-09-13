@@ -139,6 +139,7 @@ button {
 .question {
   margin-bottom: 1.25em;
   font-weight: 600;
+  font-family: 'Roboto', sans-serif;
 }
 
 .option-div {
