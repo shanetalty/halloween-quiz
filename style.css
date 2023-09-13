@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 * {
   padding: 0;
@@ -78,7 +79,7 @@ button {
 #restart,
 .time-left {
   font-weight: bold;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
 }
 
 #start-button:hover,
@@ -139,13 +140,13 @@ button {
 .question {
   margin-bottom: 1.25em;
   font-weight: 600;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
 }
 
 .option-div {
   font-size: 0.9em;
   font-weight: bold;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
   width: 100%;
   padding: 1em;
   margin: 0.3em 0;
