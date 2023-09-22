@@ -68,7 +68,7 @@ const quizArray = [
   },
   {
     id: "7",
-    question: "In Mexican culture, what holiday honors deceased loved ones and is celebrated from October 31st to November 2nd?",
+    question: "In Mexican culture, what holiday honours deceased loved ones and is celebrated from October 31st to November 2nd?",
     options: ["Dia de los Santos", "Fiesta de las Almas", "La Noche de Mil Mascaras", "Dia de los Muertos"],
     correct: "Dia de los Muertos",
   },
